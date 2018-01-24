@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">CourtCounter</string>
+    <string name="teamNameA">San Diego\nChargers</string>
+    <string name="teamNameB">Los Angeles\nChargers</string>
+    <string name="myScore">CourtCounter</string>
+    <string name="buttonTD">Touchdown!</string>
+    <string name="buttonTD2">Touchdown\n + 2 Point</string>
+    <string name="buttonFG">Field Goal</string>
+    <string name="buttonSafety">Safety</string>
+    <string name="buttonReset">Reset</string>
+</resources>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context="com.example.android.courtcounter.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Teams Layout, containing both -->
+        <LinearLayout style="@style/teamViewOverall">
+
+            <!-- TEAM A -->
+            <LinearLayout style="@style/teamViewPerTeam">
+
+                <TextView
+                    style="@style/titleStyle"
+                    android:text="@string/teamNameA" />
+
+                <ImageView
+                    style="@style/logoStyle"
+                    android:src="@drawable/sdlog" />
+
+                <TextView
+                    android:id="@+id/team_a_score"
+                    style="@style/scoreStyle"
+                    android:text="0" />
+
+                <Button
+                    android:id="@+id/buttonTDA"
+                    style="@style/buttonStyle"
+                    android:onClick="incrementByTD"
+                    android:text="@string/buttonTD" />
+
+                <Button
+                    android:id="@+id/buttonTD2A"
+                    style="@style/buttonStyle"
+                    android:onClick="incrementByTD2"
+                    android:text="@string/buttonTD2" />
+
+                <Button
+                    android:id="@+id/buttonFGA"
+                    style="@style/buttonStyle"
+                    android:onClick="incrementByFG"
+                    android:text="@string/buttonFG" />
+
+                <Button
+                    android:id="@+id/buttonSafetyA"
+                    style="@style/buttonStyle"
+                    android:onClick="incrementBySafety"
+                    android:text="@string/buttonSafety" />
+
+            </LinearLayout>
+
+            <!--Divider Line using a linear layout -->
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/darker_gray"></LinearLayout>
+
+            <!-- TEAM B -->
+            <LinearLayout style="@style/teamViewPerTeam">
+
+                <TextView
+                    style="@style/titleStyle"
+                    android:text="@string/teamNameB" />
+
+                <ImageView
+                    style="@style/logoStyle"
+                    android:src="@drawable/lalogo" />
+
+                <TextView
+                    android:id="@+id/team_b_score"
+                    style="@style/scoreStyle"
+                    android:text="0" />
+
+                <Button
+                    android:id="@+id/buttonTD"
+                    style="@style/buttonStyle"
+                    android:onClick="incrementByTD"
+                    android:text="@string/buttonTD" />
+
+                <Button
+                    android:id="@+id/buttonTD2"
+                    style="@style/buttonStyle"
+                    android:onClick="incrementByTD2"
+                    android:text="@string/buttonTD2" />
+
+                <Button
+                    android:id="@+id/buttonFG"
+                    style="@style/buttonStyle"
+                    android:onClick="incrementByFG"
+                    android:text="@string/buttonFG" />
+
+                <Button
+                    android:id="@+id/buttonSafety"
+                    style="@style/buttonStyle"
+                    android:onClick="incrementBySafety"
+                    android:text="@string/buttonSafety" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- ResetALL button for both values -->
+        <Button
+            android:id="@+id/buttonResetAll"
+            style="@style/buttonStyle"
+            android:layout_width="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="24dp"
+            android:onClick="resetScoreAll"
+            android:text="@string/buttonReset" />
+
+
+    </RelativeLayout>
+
+</ScrollView>
